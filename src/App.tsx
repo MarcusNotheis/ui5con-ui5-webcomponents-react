@@ -1,4 +1,4 @@
-import { ShellBar, ThemeProvider, Text, Button } from '@ui5/webcomponents-react';
+import { ShellBar, ThemeProvider, Text } from '@ui5/webcomponents-react';
 import '@ui5/webcomponents/dist/Button';
 import React, { createRef, PureComponent, RefObject } from 'react';
 import './App.css';
