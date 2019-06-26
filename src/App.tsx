@@ -1,4 +1,4 @@
-import { ShellBar, ThemeProvider, Text } from '@ui5/webcomponents-react';
+import { ShellBar, ThemeProvider, Text, Button } from '@ui5/webcomponents-react';
 import '@ui5/webcomponents/dist/Button';
 import React, { createRef, PureComponent, RefObject } from 'react';
 import './App.css';
@@ -15,6 +15,10 @@ class App extends PureComponent {
       count: this.state.count + 1
     });
   };
+
+  private get isDisabled() {
+    return this.state.count >= 10;
+  }
 
   componentDidMount() {
     if (this.btnRef.current) {
