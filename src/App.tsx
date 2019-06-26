@@ -17,7 +17,7 @@ class App extends PureComponent {
   };
 
   private get isDisabled() {
-    return this.state.count >= 10;
+    return this.state.count >= 3;
   }
 
   componentDidMount() {
