@@ -1348,27 +1348,6 @@
     lodash.unescape "4.0.1"
     semver "5.5.0"
 
-"@ui5-webcomponents-react/base@0.3.2-rc.4":
-  version "0.3.2-rc.4"
-  resolved "https://registry.yarnpkg.com/@ui5-webcomponents-react/base/-/base-0.3.2-rc.4.tgz#a0a76b97810dc750021bcdfdc685c546d8560b4e"
-  integrity sha512-RWrffTF+PxW/VdvKC2WmKCuBkoZ8MCiLZekDvu1TxGXXRZ6RubbbNxgobSbpA0vubJnNjDkTm3EurNt2l7n7+A==
-  dependencies:
-    core-js "^3.1.4"
-    deepmerge "^3.2.0"
-    hoist-non-react-statics "^3.3.0"
-    react-jss "^8.6.1"
-    tslib "^1.9.3"
-
-"@ui5-webcomponents-react/fiori3@^0.3.2-rc.4":
-  version "0.3.2-rc.4"
-  resolved "https://registry.yarnpkg.com/@ui5-webcomponents-react/fiori3/-/fiori3-0.3.2-rc.4.tgz#198954802cc236a09afc1941af6d3ea256bd4a3b"
-  integrity sha512-RWVrsazRYsQIA7XE9KKsOAp64yZRnm3QlMsJ58IDutbbn+iohLqpGUYHf/OVAYGI3pLnyUQuSioT9ajhKdn3xQ==
-  dependencies:
-    "@ui5-webcomponents-react/base" "0.3.2-rc.4"
-    "@ui5/webcomponents" "0.13.1"
-    react-scroll "^1.7.11"
-    react-toastify "^5.0.1"
-
 "@ui5/webcomponents-base@0.13.1":
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/@ui5/webcomponents-base/-/webcomponents-base-0.13.1.tgz#0f374876172bccb31c8eb177c7112d51c7ff9388"
@@ -1383,6 +1362,28 @@
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/@ui5/webcomponents-core/-/webcomponents-core-0.13.1.tgz#024275d47384a01126b9c049db45310e18f8ab7a"
   integrity sha512-OJHE89oxdmnpsVhihM76JO7XUHmTEtv/X4I6LnxmX5vNgHNcezMYB6wIIqyLMEcuE3yB2BnYp6EwyFXUc6nQBQ==
+
+"@ui5/webcomponents-react-base@0.3.2-rc.6":
+  version "0.3.2-rc.6"
+  resolved "https://registry.yarnpkg.com/@ui5/webcomponents-react-base/-/webcomponents-react-base-0.3.2-rc.6.tgz#03a7dcc60852069e3dc1822bd8e9efa6025e88ed"
+  integrity sha512-6rTWgnihlz1B3SxD3Mmoey7hOIUYHZr8gsed0gKvBN92SpGed/+4Ha6BRI0nSKdRjVCWHewT5OVE+n4JP3t/EQ==
+  dependencies:
+    core-js "^3.1.4"
+    deepmerge "^3.2.0"
+    hoist-non-react-statics "^3.3.0"
+    react-jss "^8.6.1"
+    tslib "^1.9.3"
+
+"@ui5/webcomponents-react@^0.3.2-rc.6":
+  version "0.3.2-rc.6"
+  resolved "https://registry.yarnpkg.com/@ui5/webcomponents-react/-/webcomponents-react-0.3.2-rc.6.tgz#c9aa488b85a732f1b7efa697a0a7716e750b6ca6"
+  integrity sha512-bRrcnXSaQSGayAcaOy5DxfXVcxMugWd2Wy5Z6Fy3ZSU3xznf5HC34GFnE0xPSCGhqJF/zvsEI7cevRZUhkQbmQ==
+  dependencies:
+    "@ui5/webcomponents" "0.13.1"
+    "@ui5/webcomponents-react-base" "0.3.2-rc.6"
+    react-scroll "^1.7.11"
+    react-table "6.8.6"
+    react-toastify "^5.0.1"
 
 "@ui5/webcomponents@0.13.1":
   version "0.13.1"
@@ -2502,7 +2503,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.6:
+classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -8193,6 +8194,13 @@ react-scroll@^1.7.11:
   dependencies:
     lodash.throttle "^4.1.1"
     prop-types "^15.5.8"
+
+react-table@6.8.6:
+  version "6.8.6"
+  resolved "https://registry.yarnpkg.com/react-table/-/react-table-6.8.6.tgz#a0ad8b4839319052d5befc012603fb161e52ede3"
+  integrity sha1-oK2LSDkxkFLVvvwBJgP7Fh5S7eM=
+  dependencies:
+    classnames "^2.2.5"
 
 react-toastify@^5.0.1:
   version "5.3.1"

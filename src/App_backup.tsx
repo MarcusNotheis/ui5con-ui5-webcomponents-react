@@ -1,8 +1,8 @@
 import React, { PureComponent, createRef, RefObject } from 'react';
-import { ThemeProvider } from '@ui5-webcomponents-react/fiori3/lib/ThemeProvider';
-import { ShellBar } from '@ui5-webcomponents-react/fiori3/lib/ShellBar';
-import { Button } from '@ui5-webcomponents-react/fiori3/lib/Button';
-import { ButtonDesign } from '@ui5-webcomponents-react/fiori3/lib/ButtonDesign';
+import { ThemeProvider } from '@ui5/webcomponents-react/lib/ThemeProvider';
+import { ShellBar } from '@ui5/webcomponents-react/lib/ShellBar';
+import { Button } from '@ui5/webcomponents-react/lib/Button';
+import { ButtonDesign } from '@ui5/webcomponents-react/lib/ButtonDesign';
 import './App.css';
 
 class App extends PureComponent {

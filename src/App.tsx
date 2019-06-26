@@ -1,5 +1,5 @@
-import { ShellBar } from '@ui5-webcomponents-react/fiori3/lib/ShellBar';
-import { ThemeProvider } from '@ui5-webcomponents-react/fiori3/lib/ThemeProvider';
+import { ShellBar } from '@ui5/webcomponents-react/lib/ShellBar';
+import { ThemeProvider } from '@ui5/webcomponents-react/lib/ThemeProvider';
 import '@ui5/webcomponents/dist/Button';
 import React, { createRef, PureComponent, RefObject } from 'react';
 import './App.css';
