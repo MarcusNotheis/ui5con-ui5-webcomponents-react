@@ -10,23 +10,20 @@ class App extends PureComponent {
 
   private btnRef: RefObject<HTMLElement> = createRef();
 
-  private onButtonClick = (e: any) => {
+  private onButtonPress = (e: any) => {
     this.setState({
       count: this.state.count + 1
     });
   };
 
-  private get isDisabled() {
-    return this.state.count >= 3;
-  }
-
   componentDidMount() {
     if (this.btnRef.current) {
-      this.btnRef.current.addEventListener('press', this.onButtonClick);
+      this.btnRef.current.addEventListener('press', this.onButtonPress);
     }
   }
 
   render() {
+    const { count } = this.state;
     return (
       <ThemeProvider>
         <ShellBar
@@ -42,8 +39,9 @@ class App extends PureComponent {
           <Text>Click Count: {this.state.count}</Text>
           <br />
           <ui5-button ref={this.btnRef}>
-            Click me!
+            Click UI5 Web Component
           </ui5-button>
+          <br />
         </div>
       </ThemeProvider>
     );

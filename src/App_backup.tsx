@@ -23,6 +23,7 @@ class App extends PureComponent {
   }
 
   render() {
+    const { count } = this.state;
     return (
       <ThemeProvider>
         <ShellBar
@@ -37,11 +38,13 @@ class App extends PureComponent {
         <div className="App">
           <Text>Click Count: {this.state.count}</Text>
           <br />
-          <ui5-button ref={this.btnRef} disabled={false}>
-            Click me!
+          <ui5-button onPress={this.onButtonClick} disabled={count >= 3}>
+            Click UI5 Web Component
           </ui5-button>
           <br />
-          <Button onPress={this.onButtonClick}>React Click</Button>
+          <Button onPress={this.onButtonClick} disabled={count >= 3}>
+            Click React
+          </Button>
         </div>
       </ThemeProvider>
     );
