@@ -38,7 +38,7 @@ class App extends PureComponent {
         <div className="App">
           <Text>Click Count: {this.state.count}</Text>
           <br />
-          <ui5-button ref={this.btnRef}>
+          <ui5-button press={this.onButtonPress}>
             Click UI5 Web Component
           </ui5-button>
           <br />
