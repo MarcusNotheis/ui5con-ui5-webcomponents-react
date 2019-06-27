@@ -10,7 +10,7 @@ class App extends PureComponent {
 
   private btnRef: RefObject<HTMLElement> = createRef();
 
-  private onButtonClick = (e: any) => {
+  private onButtonPress = (e: any) => {
     this.setState({
       count: this.state.count + 1
     });
@@ -18,7 +18,7 @@ class App extends PureComponent {
 
   componentDidMount() {
     if (this.btnRef.current) {
-      this.btnRef.current.addEventListener('press', this.onButtonClick);
+      this.btnRef.current.addEventListener('press', this.onButtonPress);
     }
   }
 
@@ -38,13 +38,11 @@ class App extends PureComponent {
         <div className="App">
           <Text>Click Count: {this.state.count}</Text>
           <br />
-          <ui5-button onPress={this.onButtonClick} disabled={count >= 3}>
+          <ui5-button ref={this.btnRef} disabled={count >= 3}>
             Click UI5 Web Component
           </ui5-button>
           <br />
-          <Button onPress={this.onButtonClick} disabled={count >= 3}>
-            Click React
-          </Button>
+          <Button onPress={this.onButtonPress} disabled={count >= 3}>Click React</Button>
         </div>
       </ThemeProvider>
     );
